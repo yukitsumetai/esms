@@ -32,7 +32,7 @@ void commentary::init_commentary(string file)
     ifstream infile(file.c_str());
 
     if (!infile)
-        die("Failed to open language file.dat");
+        die("Failed to open language.dat");
 
     string line;
 
