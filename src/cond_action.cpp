@@ -40,7 +40,7 @@ int cond_action::worst_player_on_pos(string full_position)
         // not interested in inactive players and players on other
         // positions
         //
-        if (team[team_num].player[i].active != 1 || full_position != player_i_fullpos)
+        if (team[team_num].player[i].active != 1 ||  != player_i_fullpos)
             continue;
 
         if (position == "GK")
