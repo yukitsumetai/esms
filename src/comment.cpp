@@ -27,12 +27,12 @@ commentary& the_commentary(void)
 
 // Initializes commentary data, reading it from the language.dat file
 //
-void commentary::init_commentary(string input_file)
+void commentary::init_commentary(string file)
 {
-    ifstream infile(input_file.c_str());
+    ifstream infile(file.c_str());
 
     if (!infile)
-        die("Failed to open language.dat");
+        die("Failed to open language file.dat");
 
     string line;
 
