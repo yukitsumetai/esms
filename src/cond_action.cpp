@@ -21,9 +21,9 @@ extern struct teams team[2];
 //
 // if no players were on the given position at all, returns -1
 //
-int cond_action::worst_player_on_pos(string fullpos)
+int cond_action::worst_player_on_pos(string position)
 {
-    string position = fullpos2position(fullpos);
+    string position = fullpos2position();
 
     // The "worst" player is the player with the lowest skill for
     // his position. For example, if position = "DF", we return
@@ -40,7 +40,7 @@ int cond_action::worst_player_on_pos(string fullpos)
         // not interested in inactive players and players on other
         // positions
         //
-        if (team[team_num].player[i].active != 1 || fullpos != player_i_fullpos)
+        if (team[team_num].player[i].active != 1 ||  != player_i_fullpos)
             continue;
 
         if (position == "GK")
