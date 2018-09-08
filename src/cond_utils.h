@@ -29,7 +29,7 @@ int player_name_to_number(int team_num, string name);
 /// Returns a player number from a string with either a number or
 /// or a name, or -1 if no such player.
 ///
-int action_str_to_player_number(int team_num, string str);
+int action_str_to_player_number(int team, string str);
 
 string fullpos2position(string fullpos);
 char fullpos2side(string fullpos);

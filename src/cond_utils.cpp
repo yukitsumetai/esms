@@ -23,7 +23,7 @@ int player_name_to_number(int team_num, string name)
 }
 
 
-int action_str_to_player_number(int team_num, string str)
+int action_str_to_player_number(int team, string str)
 {
 	char* ptr;
 	int player_number = strtol(str.c_str(), &ptr, 10);
@@ -39,7 +39,7 @@ int action_str_to_player_number(int team_num, string str)
 	//
 	else
 	{
-		player_number = player_name_to_number(team_num, str);
+		player_number = player_name_to_number(team, str);
 		
 		if (player_number < 0)
 			return -1;
