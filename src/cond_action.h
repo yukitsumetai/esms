@@ -38,7 +38,7 @@ public:
     virtual ~cond_action()
     {}
 protected:
-    int worst_player_on_pos(string fullpos);
+    int worst_player_on_pos(string full_position);
 
 	int team_num;
 };
